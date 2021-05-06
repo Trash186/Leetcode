@@ -1,0 +1,26 @@
+#sed是linux平台或UNIX的流编辑器，可以利用管道对标准输入的数据进行编辑或组合。
+#一般用来实现替换或批量数据添加
+#Line 1
+#Line 2
+#Line 3
+#Line 4
+#Line 5
+#Line 6
+#Line 7
+#Line 8
+#Line 9
+#Line 10
+#给定一个文本文件 file.txt，请只打印这个文件中的第十行。
+
+#grep用来做字串查询，通常和其它程序一起搭配使用，相当于数据过滤。
+
+#打 印     第 十 行 ：sed -n '10p' file.txt
+#打 印 一 到 十 行 ：sed -n '1,10p' file.txt
+#查 找 指 定 字 符 ：grep -n 'KeyWord' file.txt
+#打印指定字符上下5行：grep -C 5 'KeyWord' file.txt
+#打印指定字符上下N行：grep -A 100 -B 100 'KeyWord' file.txt
+#(-A after 后面, -B before 前面)
+#
+#查找指定字符出现次数： grep -o 'KeyWord' file.txt | wc -l
+#
+sed -n "10p" file.txt

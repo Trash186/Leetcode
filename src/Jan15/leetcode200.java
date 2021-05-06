@@ -6,6 +6,8 @@ package Jan15;
  * @create_time 2021-01-15 22:50
  * @return
  * @Version
+ * 岛屿数量问题，用一个dfs
+ * 将1“沉没”为0，然后深度优先搜索，做同样操作
  */
 public class leetcode200
 {
